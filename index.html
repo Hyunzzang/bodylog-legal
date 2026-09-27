@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hyunzzang — 만드는 앱 소개</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    padding: 48px 20px 64px;
+    background: #F7F6FB;
+    color: #1C1B29;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #6366F1;
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 24px; font-weight: 800; margin: 0 0 14px; }
+  .lead { font-size: 14.5px; color: #56546B; margin: 0 0 40px; }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #8B899C;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+  }
+  .app-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 1px 2px rgba(28, 27, 41, 0.06);
+  }
+  .app-name { font-size: 18px; font-weight: 800; margin: 0 0 6px; }
+  .app-desc { font-size: 13.5px; color: #56546B; margin: 0 0 14px; }
+  .app-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
+  .app-tags li {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4F46E5;
+    background: #EEF2FF;
+    border-radius: 999px;
+    padding: 4px 10px;
+  }
+  .app-links { display: flex; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+  .app-links a { color: #4F46E5; font-weight: 600; text-decoration: none; }
+  .app-links a:hover { text-decoration: underline; }
+  .status {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #56546B;
+    margin-bottom: 14px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(28, 27, 41, 0.08);
+    font-size: 12.5px;
+    color: #8B899C;
+  }
+  footer a { color: #8B899C; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f172a; color: #f1f5f9; }
+    .lead { color: #cbd5e1; }
+    h2 { color: #94a3b8; }
+    .app-card { background: #1e293b; box-shadow: none; }
+    .app-desc, .status { color: #cbd5e1; }
+    .app-tags li { color: #a5b4fc; background: rgba(99, 102, 241, 0.15); }
+    .app-links a { color: #a5b4fc; }
+    footer { border-top-color: rgba(241, 245, 249, 0.1); }
+    footer a { color: #94a3b8; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">HYUNZZANG</p>
+  <h1>생활 속에 필요한 앱을 만듭니다</h1>
+  <p class="lead">
+    현직 개발자로 일하면서, 개인 프로젝트로는 화려한 기능보다 일상에서 실제로 쓸모 있는 앱을 만드는 것을 목표로
+    하고 있습니다. 서버 없이 기기 안에서만 동작하는 가벼운 앱을 지향하며, 필요한 기능만 담아 오래 쓸 수 있게
+    만듭니다.
+  </p>
+
+  <h2>제공 중인 앱</h2>
+
+  <div class="app-card">
+    <span class="status">🚧 출시 준비 중</span>
+    <h3 class="app-name">BodyLog</h3>
+    <p class="app-desc">
+      아이와 성인의 키·몸무게를 기록하고 성장 상태를 한눈에 파악하는 앱입니다. 질병관리청 소아청소년 성장도표
+      공식 데이터를 기반으로 또래 대비 백분위를 계산해 보여주고, 기록을 그래프로 추적할 수 있습니다. 회원가입이나
+      서버 동기화 없이 모든 정보는 사용자의 기기 안에만 저장됩니다.
+    </p>
+    <ul class="app-tags">
+      <li>키·몸무게 기록</li>
+      <li>성장 백분위 분석</li>
+      <li>가족 프로필 관리</li>
+    </ul>
+    <div class="app-links">
+      <a href="./bodyLog_privacyPolicy.html">개인정보처리방침</a>
+    </div>
+  </div>
+
+  <footer>
+    문의: <a href="mailto:hyunpark0117@gmail.com">hyunpark0117@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
